@@ -1,0 +1,15 @@
+// JavaScript for Event Planner App
+
+document.addEventListener("DOMContentLoaded", function () {
+    console.log("Event Planner App Loaded!");
+
+    // Example: Show an alert when a service is clicked
+    let serviceCards = document.querySelectorAll(".service-card");
+    
+    serviceCards.forEach(card => {
+        card.addEventListener("click", function () {
+            let serviceName = this.querySelector("h3").textContent;
+            alert(`You selected: ${serviceName}`);
+        });
+    });
+});

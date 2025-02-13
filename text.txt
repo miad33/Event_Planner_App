@@ -1,1 +1,55 @@
-<html><head></head><body style="overflow-wrap: break-word; -webkit-nbsp-mode: space; line-break: after-white-space;"><div>// JavaScript for Event Planner App</div><div><br></div><div>document.addEventListener("DOMContentLoaded", function () {</div><div>&nbsp; &nbsp; console.log("Event Planner App Loaded!");</div><div><br></div><div>&nbsp; &nbsp; // Example: Show an alert when a service is clicked</div><div>&nbsp; &nbsp; let serviceCards = document.querySelectorAll(".service-card");</div><div>&nbsp; &nbsp;&nbsp;</div><div>&nbsp; &nbsp; serviceCards.forEach(card =&gt; {</div><div>&nbsp; &nbsp; &nbsp; &nbsp; card.addEventListener("click", function () {</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; let serviceName = this.querySelector("h3").textContent;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; alert(`You selected: ${serviceName}`);</div><div>&nbsp; &nbsp; &nbsp; &nbsp; });</div><div>&nbsp; &nbsp; });</div><div>});</div><div><br></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Planner App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        Event Planner App
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Bookings</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Book Your Event Services Easily</h1>
+        <p>Choose from our professional event service providers.</p>
+
+        <div class="service-card">
+            <img src="images/decoration.jpg" alt="Decoration">
+            <h3>Decoration Services</h3>
+            <p>Beautiful setups for any event.</p>
+        </div>
+
+        <div class="service-card">
+            <img src="images/catering.jpg" alt="Catering">
+            <h3>Catering Services</h3>
+            <p>Delicious food for your guests.</p>
+        </div>
+
+        <div class="service-card">
+            <img src="images/photography.jpg" alt="Photography">
+            <h3>Photography Services</h3>
+            <p>Capture your moments professionally.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 Event Planner App. All Rights Reserved.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
